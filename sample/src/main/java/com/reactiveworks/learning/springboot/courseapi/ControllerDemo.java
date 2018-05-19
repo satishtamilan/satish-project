@@ -13,6 +13,6 @@ public class ControllerDemo {
 	
 	@RequestMapping("/")
    public String greetMessage(){
-	   return "WELCOME TO Blue Deployment v2";
+	   return "WELCOME TO Green Deployment v1";
    }
 }
