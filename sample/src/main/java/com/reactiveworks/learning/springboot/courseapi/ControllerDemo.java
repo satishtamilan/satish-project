@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ControllerDemo {
 	
+ @Value("${BLUE_SERVICE_HOST}")
+    private String BlueAppHost;
+	
 	@RequestMapping("/hello")
 	public String getHello(){
 		return "Hello";
@@ -13,6 +16,6 @@ public class ControllerDemo {
 	
 	@RequestMapping("/")
    public String greetMessage(){
-	   return "WELCOME TO Blue Deployment v2";
+	   return "WELCOME TO Blue Deployment Service Discovery"+ BlueAppHost;
    }
 }
