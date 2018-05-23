@@ -21,6 +21,6 @@ public class ControllerDemo {
 	
 	@RequestMapping("/")
    public String greetMessage(){
-	   return "WELCOME TO Blue Deployment Service Discovery"+ BlueAppHost;
+	   return "WELCOME TO Blue Deployment Service Discovery V2"+ BlueAppHost;
    }
 }
